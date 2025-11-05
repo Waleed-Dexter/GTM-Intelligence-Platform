@@ -23,18 +23,3 @@ The platform automates:
 
 ### Notify
 `slack_digest.py` sends a short daily summary to Slack (requires your webhook).
-
----
-
-## Folder Structure
-
-├── fetch_signals.py # Collects Revolut-related news
-├── GTM_Intel_Task2.py # Classifies & summarizes signals
-├── slack_digest.py # Posts Slack digest via webhook
-├── sources.yml # Feed URLs and keyword filters
-├── category_rules.json # GTM classification rules
-├── icp_profile.json # ICP configuration
-├── signals_template.csv # Placeholder (auto-filled by fetch_signals)
-├── requirements.txt # Dependencies
-├── out/ # Output folder (auto-created)
-└── gtm-intel-daily.yml # CI automation (runs daily + manual trigger)
