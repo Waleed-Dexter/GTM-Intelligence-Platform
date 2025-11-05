@@ -1,0 +1,30 @@
+name: GTM Intel — Daily (Revolut)
+
+on:
+  schedule:
+    - cron: "0 7 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Collect signals
+        run: python fetch_signals.py
+      - name: Classify and summarize
+        run: python GTM_Intel_Task2.py
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: gtm-intel-out
+          path: out/**
+      - name: Post Slack digest
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python slack_digest.py

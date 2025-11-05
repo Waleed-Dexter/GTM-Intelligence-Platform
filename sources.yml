@@ -1,0 +1,21 @@
+company: "Revolut"
+keywords:
+  include:
+    - Revolut
+    - Revolut banking license
+    - Revolut UK licence
+    - Revolut expansion
+    - Revolut partnership
+    - Revolut funding
+    - Revolut crypto
+    - Revolut Business
+  exclude:
+    - Revolute
+    - revolution
+max_items_per_feed: 25
+feeds:
+  - https://news.google.com/rss/search?q=Revolut&hl=en-US&gl=US&ceid=US:en
+  - https://news.google.com/rss/search?q=Revolut+banking+license&hl=en-US&gl=US&ceid=US:en
+  - https://news.google.com/rss/search?q=Revolut+crypto&hl=en-US&gl=US&ceid=US:en
+  - https://news.google.com/rss/search?q=Revolut+expansion&hl=en-US&gl=US&ceid=US:en
+  - https://news.google.com/rss/search?q=Revolut+partnership&hl=en-US&gl=US&ceid=US:en
