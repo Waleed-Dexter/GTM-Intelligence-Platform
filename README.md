@@ -1,9 +1,4 @@
-# GTM Intelligence Platform (Task 2 – Revolut Global)
-
-A lightweight prototype that gathers external **market signals** for **Revolut (Global)** and translates them into **actionable GTM insights**.  
-Built as part of the **Wavess Internship Project – Task 2**.
-
----
+# GTM Intelligence Platform
 
 ## Overview
 
