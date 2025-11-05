@@ -16,7 +16,7 @@ The platform automates:
 `fetch_signals.py` scrapes recent Revolut-related updates from Google News RSS feeds defined in `sources.yml`.
 
 ### Classify
-`GTM_Intel_Task2.py`:
+`GTM_Intel.py`:
 - Reads the fetched signals.
 - Applies keyword rules from `category_rules.json`.
 - Summarizes and ranks the signals by relevance.
